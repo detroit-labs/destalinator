@@ -18,7 +18,7 @@ flagger_activated: false
 activated: false
 
 # What should the bot's name be when it posts?
-bot_name: "destalinator"
+bot_name: "Channel Archiver"
 
 # What should the bot's avatar be when it posts?
 bot_avatar_url: "https://s3-us-west-1.amazonaws.com/eng-management-docs/bread.png"
