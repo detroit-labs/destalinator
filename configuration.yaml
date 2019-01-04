@@ -24,10 +24,10 @@ bot_name: "Channel Archiver"
 bot_avatar_url: "https://s3-us-west-1.amazonaws.com/eng-management-docs/bread.png"
 
 # Days of silence before we warn a channel it's going to be archived
-warn_threshold: 30
+warn_threshold: 60
 
 # Days of silence before we auto-archive a channel
-archive_threshold: 60
+archive_threshold: 90
 
 # Where should we post "general" announcement messages?
 general_message_channel: "zmeta-stale-channels"
