@@ -119,13 +119,12 @@ class Destalinator(WithLogger, WithConfig):
             return False
 
         messages = self.get_messages(channel_name, days)
+        ignore_users = self.config.ignore_users
+        ignore_users.append(self.config.bot_name)
 
         # return True (stale) if none of the messages match the criteria below
         return not any(
             # the message is not from an ignored user
-            ignore_users = self.config.ignore_users
-            ignore_users.append(self.config.bot_name)
-
             x.get("user") not in ignore_users \
             and x.get("username") not in ignore_users \
             and (
