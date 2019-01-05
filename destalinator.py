@@ -125,7 +125,7 @@ class Destalinator(WithLogger, WithConfig):
             # the message is not from an ignored user
             ignore_users = self.config.ignore_users
             ignore_users.append(self.config.bot_name)
-            
+
             x.get("user") not in ignore_users \
             and x.get("username") not in ignore_users \
             and (
